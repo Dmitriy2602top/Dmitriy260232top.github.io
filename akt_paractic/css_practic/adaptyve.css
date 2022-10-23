@@ -1,0 +1,414 @@
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #121212;
+  transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 7px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 7px);
+}
+.menu-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 100;
+  /* overflow: hidden; */
+}
+
+@media only screen and (max-width: 1500px) {
+  .wrapper {
+    width: 83%;
+  }
+  .order__students {
+    flex: 0 0 250px;
+  }
+  .pclesson__title {
+    flex-basis: 570px;
+    flex-shrink: 0;
+    padding: 0px 30px 0px 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90%;
+  }
+  .pclesson {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .pclesson__img-border {
+    max-height: 399px;
+    max-width: 426px;
+  }
+  .pclesson__img_pc {
+    max-width: 346px;
+    max-height: 346px;
+    left: 20px;
+  }
+  .header__logo {
+    padding-left: 40px;
+  }
+  .menu {
+    margin: 0px 0px 0px 25px;
+    gap: 23px;
+  }
+  .block_left {
+    align-self: center;
+  }
+}
+.menu-btn__burger {
+  display: none;
+}
+@media only screen and (max-width: 1125px) {
+  .border__bottom {
+    border: none;
+  }
+  .border__left {
+    border: none;
+  }
+  .partner__child {
+    grid-template: repeat(4, minmax(150px, auto)) / repeat(2, 1fr);
+  }
+
+  .time_cub {
+    z-index: 2;
+    position: relative;
+  }
+  .header {
+    z-index: 2;
+    position: relative;
+    align-items: center;
+  }
+  .header_fixed {
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background: #121212;
+  }
+  .menu-btn span {
+    background-color: white;
+  }
+
+  .zagolovok {
+    z-index: 2;
+    position: relative;
+  }
+  .zagolovok h1 {
+    font-size: 56px;
+  }
+  .overflow_black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0, 0.5);
+  }
+  .order__statistics {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .order {
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header_fixed {
+  }
+  .header__menu {
+    display: none;
+  }
+  .header {
+  }
+  .hidden {
+    opacity: 0;
+  }
+
+  .menu-btn__burger {
+    transform: translate(-100%);
+    transition: all 0.5s ease 0s;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background: #121010;
+    z-index: 3;
+    font-size: 40px;
+  }
+  .menu-btn__burger.active {
+    transform: translate(0);
+  }
+
+  .header__knopka {
+    width: 300px;
+  }
+  .knopka__lk {
+    padding: 5px;
+  }
+  .menu__burger_li li {
+    color: aqua;
+    margin-bottom: 30px;
+  }
+  .menu__burger_li li a {
+    color: aqua;
+  }
+  .menu__burger_li li a:hover {
+    color: red;
+  }
+  .menu__burger_li li a:active {
+    color: yellow;
+  }
+  .menu__burger_li {
+    margin: 0px 0px 30px 0px;
+  }
+  .header {
+    z-index: 2;
+  }
+  .header__logo {
+    transition: all 0.5s ease 0.3s;
+  }
+  .menu-btn {
+    margin: 0px 30px 0px 0px;
+    right: 0;
+    top: 17px;
+    /* top: 18px; */
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    overflow: hidden;
+  }
+  .menu-btn._active {
+    right: 0;
+
+    display: block;
+    cursor: pointer;
+    position: fixed;
+  }
+
+  .pclesson__title {
+    flex-shrink: 1;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .teacher_last {
+    flex-basis: 100%;
+  }
+  .teacher {
+    margin: 35px 0px 35px 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .profskill__skills {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 150px;
+  }
+  .profskills__skills_skill {
+    width: 50%;
+  }
+  .boost-start {
+    margin: 0px 0px 70px 0px;
+  }
+  .skill__h4 {
+    font-weight: 700;
+  }
+  .zagolovok h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+  .progress {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .progress__section_h3 {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .progress__section_statistic_flex {
+    margin: 0px 0px 0px 0px;
+    flex-direction: column;
+  }
+  .progress__section_statistic {
+    transform: rotate(90);
+    height: 25%;
+    width: 100px;
+  }
+  .stat_1 {
+    width: 80px;
+  }
+  .progress__section_p {
+    flex-basis: 33%;
+    flex-direction: column;
+  }
+  .p_lorem {
+    margin-bottom: 40px;
+    width: auto;
+  }
+  .p_lorem.title {
+    margin: 0px 0px 0px 0px;
+  }
+  .stat_2 {
+    width: 60px;
+  }
+  .stat_3 {
+    width: 30px;
+  }
+  .stat_4 {
+    width: 10px;
+  }
+  .deadline {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 676px) {
+  .vertical__content_line {
+    display: none;
+  }
+  .menu-btn__burger {
+    width: 70%;
+  }
+  .title {
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .menu__burger_li li {
+    color: aqua;
+    margin-bottom: 20px;
+  }
+
+  .partner__child {
+    grid-template: repeat(8, minmax(150px, auto)) / repeat(1, 1fr);
+  }
+  .partner__h2 {
+    font-size: 40px;
+  }
+  .partner__img img {
+    align-items: center;
+  }
+}
+.fixed {
+  position: fixed;
+}
+@media only screen and (max-width: 462px) {
+  .header__knopka {
+    width: 250px;
+  }
+  .menu-btn__burger {
+    padding-top: 60px;
+    width: 100%;
+  }
+  .header {
+    height: 60px;
+    z-index: 4;
+  }
+  .program__tree {
+    height: 730px;
+  }
+  .menu-btn {
+    top: 10px;
+    margin-right: 10px;
+  }
+  .teachers__title_img {
+    flex-shrink: 1;
+  }
+  .profskills__skills_skill {
+    width: 100%;
+  }
+  .boost-start p {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+  .zagolovok h1 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .pclesson__img-border {
+    border: 0px;
+    flex-basis: 100%;
+  }
+  .pclesson__img_pc {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .order {
+    justify-content: center;
+  }
+  .time_cub {
+    height: 100px;
+  }
+  .deadline {
+    gap: 15px;
+  }
+  .order__students {
+    order: 1;
+    flex-shrink: 1;
+    margin: 30px 0px 60px 0px;
+  }
+  .order__statistics .span_left {
+    margin-left: 15px;
+  }
+  .order__statistics {
+    order: 2;
+    margin: 0px 0px 40px 0px;
+  }
+  .order__button {
+    order: 3;
+    margin: 0px 0px 30px 0px;
+  }
+  .vertical1__content {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 366px) {
+  .teachers__title {
+    align-items: start;
+    flex-direction: column;
+  }
+  .boost-start__img {
+    align-items: center;
+    flex-direction: column;
+  }
+  .boost-start__img img {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .deadline {
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 60px 0px;
+  }
+}
